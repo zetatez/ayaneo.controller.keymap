@@ -1,0 +1,26 @@
+
+device: "/dev/input/event6"
+deadzone: 12000
+
+buttons:
+  BTN_SOUTH: KEY_ENTER      # A
+  BTN_EAST:  KEY_ESC        # B
+  BTN_NORTH: KEY_TAB        # Y
+  BTN_WEST:  KEY_SPACE      # X
+
+  BTN_TL: KEY_LEFTCTRL     # LB
+  BTN_TR: KEY_LEFTALT      # RB
+
+  BTN_SELECT: KEY_BACKSPACE
+  BTN_START:
+    combo:
+      - KEY_LEFTMETA
+      - KEY_ENTER
+
+axes:
+  ABS_X:
+    negative: KEY_A
+    positive: KEY_D
+  ABS_Y:
+    negative: KEY_W
+    positive: KEY_S
